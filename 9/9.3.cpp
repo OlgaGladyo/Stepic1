@@ -1,18 +1,21 @@
 #include <iostream>
-#include <cmath>
+
 using namespace std;
-bool a(double x, double y){
-	return (x >= -1 && x <= 1 && y >= -1 && y <= 1);
 
-
+bool tochka (double x, double y)
+{
+    /*if (x>=-1 && x<=1 && y>=-1 && y<=1) return true;
+    else return false;*/
+        return (x>=-1 && x<=1 && y>=-1 && y<=1);
 }
-int main() {
-	double x, y;
-	cin >> x >> y;
-	if(a(x, y)){
-		cout << "YES";
-	}	else {
-		cout << "NO";
-	}
-  return 0;
+
+int main()
+{
+    double x,y;
+    cin >> x;
+    cin >> y;
+if (tochka(x,y)) cout << "Yes";
+else cout<< "No";
+
+    return 0;
 }
